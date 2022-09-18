@@ -17,7 +17,7 @@ public class MagicBox<T, C> {
         for (int i = 1; i < items.length; i++) {
             T item;
             if (items[i] != null) {
-                items[i] = ;
+                items[i] =;
                 return true;
             } else {
                 return false;
