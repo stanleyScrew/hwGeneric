@@ -1,15 +1,23 @@
 import java.util.Random;
 
-public class MagicBox<T> {
-    public static final int SIZE = 5;
+public class MagicBox<T, C> {
+    //    public static final int SIZE = 5;
+    protected T[] items;
     private Random random = new Random();
-    int randomInt = random.nextInt(SIZE);
-    T[] items = (T[]) new Object[SIZE];
+    //    private int randomInt = random.nextInt(quantity);
+    protected C quantity;
 
-    boolean add(T item) {
+
+    public MagicBox(C quantity) {
+        T[] items = (T[]) new Object[(int) quantity];
+    }
+
+    boolean add(T[] items) {
+
         for (int i = 1; i < items.length; i++) {
+            T item;
             if (items[i] != null) {
-                items[i] = item;
+                items[i] = ;
                 return true;
             } else {
                 return false;
